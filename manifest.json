@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "リンク付きボタン",
+  "version": "1.0",
+  "description": "特定のページにリンク付きのボタンを追加する",
+  "content_scripts": [
+    {
+      "matches": ["https://manaba.tsukuba.ac.jp/ct/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "permissions": [
+    "activeTab"
+  ]
+}
